@@ -83,7 +83,7 @@ class CurlTransport
          * info is false, then it has no HTTP status code.
          */
         if (strlen($error) > 0) {
-            throw new Exceptions\KlarnaException(
+            throw new Exception\KlarnaException(
                 "Connection failed with error: {$error}"
             );
         }
